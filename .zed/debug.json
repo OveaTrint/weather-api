@@ -1,0 +1,12 @@
+[
+  {
+    "label": "Python: Django",
+    "adapter": "Debugpy",
+    "request": "launch",
+    "program": "manage.py",
+    "args": [
+      "runserver"
+    ],
+    "django": true
+  }
+]
