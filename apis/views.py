@@ -12,7 +12,6 @@ from rest_framework.throttling import AnonRateThrottle
 from cache import get_weather_from_cache, save_weather_in_cache
 
 logger = logging.getLogger(__name__)
-logging.basicConfig(level=logging.DEBUG)
 
 load_dotenv()
 WEATHER_API_KEY = os.getenv("VISUAL_CROSSING_API_KEY")
