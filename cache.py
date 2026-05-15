@@ -12,7 +12,7 @@ r = redis.Redis(host="localhost", port=6379, cache_config=CacheConfig(), protoco
 def get_weather_from_cache(key: str) -> dict[str, Any] | None:
     cached_weather = r.get(key)
 
-    if not cached_weather:
+    if cached_weather is None:
         return cached_weather
 
     weather = json.loads(cached_weather)
