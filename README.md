@@ -27,6 +27,11 @@ Sync the dependencies
 uv sync
 ```
 
+Run migrations
+```bash
+python manage.py migrate
+```
+
 Run the server
 ```bash
 python manage.py runserver
